@@ -2,5 +2,18 @@
 name = "sido"
 version = "0.1.0"
 edition = "2024"
+build = "build.rs"
 
 [dependencies]
+slint = "1.13.1"
+
+[profile.release]
+lto = true
+debug = false
+opt-level = "z"
+panic = "abort"
+codegen-units = 1
+strip = true
+
+[build-dependencies]
+slint-build = "1.13.1"
