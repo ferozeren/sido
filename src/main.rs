@@ -1,11 +1,10 @@
+// For windows subsystem, relase mode
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
-
-use std::error::Error;
-
 slint::include_modules!();
 
 fn main() -> Result<(), slint::PlatformError> {
     let ui: AppWindow = AppWindow::new()?;
+    let apple = 1000;
 
     ui.run()?;
     Ok(())

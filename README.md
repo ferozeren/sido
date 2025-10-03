@@ -1,2 +1,2 @@
 # sido
-Simple To-Do for sanity!
+Simple To-Do for sanity! **WIP** 
