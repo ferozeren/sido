@@ -4,7 +4,6 @@ slint::include_modules!();
 
 fn main() -> Result<(), slint::PlatformError> {
     let ui: AppWindow = AppWindow::new()?;
-    let apple = 1000;
 
     ui.run()?;
     Ok(())

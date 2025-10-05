@@ -1,5 +1,41 @@
 export component AppWindow inherits Window {
-    Text {
-        text:"Hello, World!";
+    default-font-size: 16px;
+    default-font-family: "Roboto";
+    min-height: 640px;
+    min-width: 360px;
+    background: gray;
+    HorizontalLayout {
+        spacing: 10px;
+        Rectangle {
+            width: 20%;
+            VerticalLayout {
+                Rectangle {
+                    height: 8%;
+                    padding-left: 10px;
+                    background: white;
+                }
+                Rectangle {
+                }
+            }
+        }
+
+        Rectangle {
+            background: white;
+            VerticalLayout {
+                spacing: 2px;
+                Rectangle {
+                    background: yellow;
+                }
+                Rectangle {
+                    background: green;
+                }
+                Rectangle {
+                    background: black;
+                }
+            }
+        }
+        Rectangle {
+            background: cyan;
+        }
     }
 }
